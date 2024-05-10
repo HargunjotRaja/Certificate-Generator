@@ -2,6 +2,7 @@ from PIL import ImageDraw, Image, ImageFont
 
 def CertificateGenerator(names_and_paths, certificate_path):
 
+
     for name, output_path in names_and_paths.items():
         certificate = Image.open(certificate_path)
         draw = ImageDraw.Draw(certificate)
